@@ -1,20 +1,24 @@
 import AboutMe from "@/components/AboutMe/AboutMe";
 import EndCard from "@/components/EndCard/EndCard";
+import Experience from "@/components/Experience/Experience";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 import Portofolio from "@/components/Portofolio/Portofolio";
 import Skill from "@/components/Skill/Skill";
-import Image from "next/image";
+import React from "react";
 
-export default function Home() {
+const Testpage = () => {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Skill />
-      <Portofolio />
-      <AboutMe />
-      <EndCard />
+      {/* <Navbar /> */}
+      {/* <Hero /> */}
+      {/* <Skill /> */}
+      {/* <Portofolio /> */}
+      {/* <AboutMe /> */}
+      <Experience />
+      {/* <EndCard /> */}
     </div>
   );
-}
+};
+
+export default Testpage;
