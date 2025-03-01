@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutMe = () => {
    return (
-      <section className="flex flex-col items-center my-[92px] container m-auto h-[calc(100vh-96px)]  max-h-[916px] bg-green-300 relative">
-         <div className="h-[82px] justify-center items-center gap-[47px] inline-flex">
-            <div data-svg-wrapper>
+      <section key="about" id="about" className="flex flex-col items-center  container m-auto h-[calc(100vh-96px)]  max-h-[916px]  relative">
+         <div className="h-[20%] justify-center items-center gap-[47px] inline-flex relative">
+            <div data-svg-wrapper className="absolute top-[70%] overflow-hidden w-full">
                <svg
                   width="384"
                   height="15"
@@ -30,7 +30,7 @@ const AboutMe = () => {
             </div>
          </div>
 
-         <div className="h-full relative w-full px-[10%] items-center justify-evenly flex flex-col">
+         <div className="h-[80%] relative w-full px-[10%] items-center justify-evenly flex flex-col">
             <LineVector />
             <div className="w-full flex ">
                <AboutMeCard
@@ -77,7 +77,7 @@ export const AboutMeCard: React.FC<RotatingCardProps> = ({
          className={`w-[100%] lg:w-[40%] h-[100%] p-[1%] origin-top-left  bg-white rounded-sm shadow-[11.465076446533203px_11.465076446533203px_0px_0px_rgba(191,191,180,1.00)] border-4 border-black flex-col justify-start items-start  inline-flex `}
          style={{ transform: `rotate(${rotate}deg)` }}
       >
-         <div className=" text-[#181818] text-[27.99px] font-medium font-['Inter'] leading-10">
+         <div className=" text-[#181818] text-[19.99px] md:text-[27.99px] font-medium font-['Inter'] leading-10">
             {content}
          </div>
       </div>

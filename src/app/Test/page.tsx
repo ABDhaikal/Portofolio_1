@@ -5,17 +5,19 @@ import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 import Portofolio from "@/components/Portofolio/Portofolio";
 import Skill from "@/components/Skill/Skill";
+import Testimonial from "@/components/Testimonial/Testimonial";
 import React from "react";
 
 const Testpage = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
       <Skill />
       <Portofolio />
       <AboutMe />
       <Experience />
+      <Testimonial />
     </div>
   );
 };

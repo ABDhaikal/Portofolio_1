@@ -9,9 +9,9 @@ const Navbar = () => {
     <div className="items-center justify-center flex gap-x-[-12px] border-black border-b-4  h-[96px] py-8 overflow-hidden ">
         <Image src="/star.svg" alt="" width={151} height={151} className="absolute top-16 left-[-20]" />
         <NavbarHome />
-        <NavbarButton content="About Me" />
-        <NavbarButton content="Skill" />
-        <NavbarButton content="Porto  " />
+        <NavbarButton content="About Me" clickLink="#about" />
+        <NavbarButton content="Skill" clickLink="#about"/>
+        <NavbarButton content="Porto  " clickLink="#about"/>
         <Image src="/star.svg" alt="" width={200} height={200} className="absolute top-[0] right-[0] " />
     </div>
   );
