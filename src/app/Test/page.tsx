@@ -10,13 +10,12 @@ import React from "react";
 const Testpage = () => {
   return (
     <div>
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
-      {/* <Skill /> */}
-      {/* <Portofolio /> */}
-      {/* <AboutMe /> */}
+      <Navbar />
+      <Hero />
+      <Skill />
+      <Portofolio />
+      <AboutMe />
       <Experience />
-      {/* <EndCard /> */}
     </div>
   );
 };
