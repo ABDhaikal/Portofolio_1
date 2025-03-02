@@ -13,8 +13,8 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero />
-      {/* <Skill /> */}
-      {/* <Portofolio /> */}
+      <Skill />
+      <Portofolio />
       <AboutMe />
       <Experience />
       <Testimonial />
