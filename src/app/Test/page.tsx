@@ -11,11 +11,15 @@ import React from "react";
 const Testpage = () => {
    return (
       <div>
+         <div className="h-[200px] w-full container m-auto bg-slate-400"></div>
          {/* <Navbar /> */}
          {/* <Hero /> */}
-         <div className="h-[200px] w-full container m-auto bg-slate-400"></div>
-         <Skill />
-         {/* <Portofolio /> */}
+         {/* <Skill /> */}
+         <Portofolio />
+         <div className="flex justify-center items-center h-screen bg-gray-100">
+      
+ 
+    </div>
          {/* <AboutMe /> */}
          {/* <Experience /> */}
          {/* <Testimonial /> */}

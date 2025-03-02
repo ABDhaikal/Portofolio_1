@@ -3,7 +3,7 @@ import React from "react";
 
 const Testimonial = () => {
    return (
-      <section className="container m-auto items-center flex flex-col relative">
+      <section className="container m-auto items-center flex flex-col relative my-10 px-9">
          <div className="h-[20%] justify-center items-center gap-[47px] inline-flex relative">
             <div>
                <h2 className="text-black text-[64px] font-medium font-['Space_Grotesk']">
@@ -31,7 +31,7 @@ const Testimonial = () => {
             </div>
          </div>
 
-         <div className="grid md:grid-cols-2 flex-grow gap-[4%] p-[4%] w-full md:w-[80%]">
+         <div className="grid md:grid-cols-2 flex-grow gap-[4%] p-[4%] w-[80%]">
             <TestimonialCard title="Siti Premium" img="woman1" position="Senior Designer" says="Design is a bridge that connects everyone and everything" />
             <TestimonialCard title="Alex Turbo" img="man1" position="Frontend Developer" says="An incredible team, creating stunning, user-friendly interfaces with precision and creativity." />
             <TestimonialCard title="Subekti SuperLite" img="man2" position="Senior Backend Developer" says="Ensuring seamless operations and robust systems every day with remarkable expertise." />
@@ -58,9 +58,12 @@ export const TestimonialCard: React.FC<testiCardProps> = ({
 }) => {
    return (
       <div key={"testi"} className="p-[5%] text-black bg-white rounded-sm shadow-[12px_12px_0px_0px_rgba(191,191,180,1.00)] border-4 border-black flex-col justify-start items-start space-y-4 ">
-         <div className=" w-full grid grid-flow-col relative gap-3">
-            <Image src={`/testi/${img}.png`} alt={img} width={70} height={70} className=" rounded-full object-cover justify-self-center "/>
-            <div className="w-full">
+         <div className=" w-full flex flex-row relative gap-3">
+            <div className="w-1/3 flex items-center justify-center">
+            <Image src={`/testi/${img}.png`} alt={img} width={70} height={70} className=" rounded-full object-cover justify-self-center aspect-square "/>
+
+            </div>
+            <div className="w-2/3">
                <h3 className="text-black text-xl lg:text-4xl font-medium font-['Space Grotesk']">
                   {title}
                </h3>

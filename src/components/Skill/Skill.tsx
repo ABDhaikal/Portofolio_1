@@ -100,14 +100,14 @@ export const SkillBody = () => {
 
                <div className="grow border-t-2 border-black p-3 flex">
                   <Image
-                     src={"/Skill/figma.svg"}
+                     src={"/Skill/FigmaImg.svg"}
                      alt=""
                      width={50}
                      height={50}
                      className="md:w-[50px] w-[30px] aspect-squares"
                   />
                   <Image
-                     src={"/Skill/framer.svg"}
+                     src={"/Skill/FramerImg.svg"}
                      alt=""
                      width={50}
                      height={50}

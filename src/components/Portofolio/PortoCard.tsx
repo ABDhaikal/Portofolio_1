@@ -1,19 +1,24 @@
 import Image from "next/image";
 import { useState } from "react";
+import Modal from "./Modal";
 
 interface CardProps {
    title: string;
    subtitle: string;
-   img: string;
+   imgSrc: string;
+   description: string;
 }
-const PortofolioCard = () => {
+const PortofolioCard: React.FC<CardProps> = ({ title, subtitle,description, imgSrc }) => {
+   const [isOpenModal, setIsOpenModal] = useState(false);
+   const ModalOpenHandle = () => setIsOpenModal(true);
+   const ModalCloseHandle = () => setIsOpenModal(false);
    return (
     
-      <div className=" bg-white relative p-[5%] flex-col gap-3  shadow-[-10px_10px_0px_0px_rgba(0,0,0,0.44)]  aspect-square ">
+      <div className=" w-[300px] md:w-[450px] bg-white relative p-4 flex-col gap-3  shadow-[-10px_10px_0px_0px_rgba(0,0,0,0.44)]  aspect-square ">
          <svg 
             viewBox="0 0 581 573"
             preserveAspectRatio="none"
-            className=" w-[110%] h-[106%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+            className=" w-[110%] h-[109%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[-1]"
             fill="none"
             xmlns="http://www.w3.org/2000/svg "
          >
@@ -51,30 +56,32 @@ const PortofolioCard = () => {
             />
          </svg>
 
-         <div className="w-full h-[65%] border-4 border-black ">
+         <div className="border-4 border-black relative h-2/3 ">
             <Image
-               src="/wow.png"
+               src={imgSrc}
                alt=""
-               width={500}
-               height={500}
-               className="w-full h-full object-cover"
+               width={300}
+               height={300}
+               className=" object-fill w-full h-full"
             />
          </div>
          
          <div className=" justify-center  my-2 flex flex-row ">
             <div className="flex-col justify-start items-start gap-3 inline-flex grow">
                <div className="text-black text-2xl  md:text-4xl font-bold font-['Space Grotesk']">
-                  Portfolio design
+                  {title}
                </div>
                <div className=" text-black text-xl md:text-2xl font-medium font-['Space Grotesk']">
-                  UI design - User research
-                  webflow develop
+                  {subtitle}
                </div>
             </div>
             <div className=" text-black text-xl font-medium font-['Space Grotesk']">
-               icon Here
+               <button onClick={ModalOpenHandle} className="p-2">
+                  <Image src={"/porto/moreButton.svg"} alt="" width={50} height={50} className="w-[30px] md:w-[50px]" />
+               </button>
             </div>
          </div>
+         <Modal isOpen={isOpenModal} onClose={ModalCloseHandle} title={title} subtitle={subtitle} description={description} imgSrc={imgSrc} />
       </div>
    );
 };

@@ -18,6 +18,7 @@ export default function Home() {
       <AboutMe />
       <Experience />
       <Testimonial />
+      
       {/* <EndCard /> */}
     </div>
   );

@@ -1,13 +1,15 @@
 "use client";
+
 import Image from "next/image";
 import React, { useState } from "react";
 import PortofolioCard from "./PortoCard";
 
 const Portofolio = () => {
    return (
-      <section className="container m-auto items-center justify-center flex flex-col relative">
-        <div className="justify-center items-center gap-[47px] inline-flex relative">
-            <div data-svg-wrapper className="absolute top-[70%] overflow-hidden w-full">
+      <section className="container m-auto items-center justify-center flex flex-col relative my-10">
+        <div className="justify-center items-center relative">
+            <Image src={"/porto/PortoAcent.svg"} alt="Acent" width={112} height={117} className="absolute w-[40%] max-w-[112px] top-[0%] right-[-50%]"/>
+            <div data-svg-wrapper className="absolute top-[90%] overflow-hidden w-full">
                <svg
                   width="384"
                   height="15"
@@ -23,14 +25,15 @@ const Portofolio = () => {
                   />
                </svg>
             </div>
-            <h2 className="text-black text-[64px] font-medium font-['Space_Grotesk']">
+            <h2 className="text-black text-4xl md:text-6xl font-medium font-['Space_Grotesk']">
                Portofolio
             </h2>
          </div>
          
-         <div className=" grid  lg:grid-flow-col p-24 gap-8 md:gap-32  mx-11 ">
-            <PortofolioCard />
-            <PortofolioCard />
+         <div className=" grid  lg:grid-cols-2 py-16 px-12 md:px-32 gap-8 md:gap-32  relative  ">
+            <PortofolioCard title="TokoOnline" subtitle="Developing Online Store" imgSrc="/porto/TokoOnline.png" description="Lead developer for TokoOnline project, an online store. Task: Create a seamless e-commerce experience. Action: Designed and developed a dynamic product catalog and shopping cart using React, and integrated secure payment systems with Stripe. Result: Enhanced user experience, leading to a 30% increase in sales and customer retention."/>
+            <PortofolioCard title="Kampung Maju Jaya" subtitle="Developing Community Platform" imgSrc="/porto/webKampungJaya.png" description="Front-end developer for Kampung Maju Jaya, a community platform. Task: Enhance the user experience and interface. Action: Created intuitive and responsive web interfaces using HTML, CSS, and JavaScript. Collaborated closely with UX/UI designers to ensure user-friendly design. Result: Improved user engagement by 40%, with positive feedback on usability and accessibility."/>
+ 
          </div>
       </section>
    );
