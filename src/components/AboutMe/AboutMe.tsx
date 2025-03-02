@@ -4,7 +4,7 @@ const AboutMe = () => {
    return (
       <section id="about" className="flex flex-col items-center  container m-auto  my-10 relative">
          <div className="h-[20%] justify-center items-center gap-[47px] inline-flex relative">
-            <div data-svg-wrapper className="absolute top-[70%] overflow-hidden w-full">
+            <div data-svg-wrapper className="absolute top-[90%] overflow-hidden w-full">
                <svg
                   width="384"
                   height="15"
@@ -20,21 +20,21 @@ const AboutMe = () => {
                   />
                </svg>
             </div>
-            <div>
-               <span className="text-black text-[64px] font-medium font-['Space_Grotesk']">
+            <h2 className="text-4xl md:text-6xl font-['Space_Grotesk']">
+               <span className="text-black font-medium ">
                   About{" "}
                </span>
-               <span className="text-black text-[64px] font-bold font-['Space_Grotesk']">
+               <span className="text-black  font-bold ">
                   Me
                </span>
-            </div>
+            </h2>
          </div>
 
          <div className="gap-[36px] relative w-full py-[10%] px-[10%] items-center justify-evenly flex flex-col">
             <LineVector />
             <div className="w-full flex ">
                <AboutMeCard
-                  content="“Passionate about creating innovative solutions in web development”"
+                  content="“As Bachelor of Science in Information Technology, I am passionate about creating innovative solutions in web development”"
                   rotate="2"
                />
             </div>

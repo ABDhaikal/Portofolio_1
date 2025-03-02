@@ -5,7 +5,7 @@ import React from "react";
 const Skill = () => {
    return (
       // header
-      <section className="container m-auto my-[24px]   md:max-h-[816px] relative flex flex-col px-8">
+      <section id="skill" className="container m-auto my-[24px]   md:max-h-[816px] relative flex flex-col px-8">
          <SkillHead />
          <SkillBody />
       </section>

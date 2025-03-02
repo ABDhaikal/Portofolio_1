@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -6,13 +7,13 @@ const Hero = () => {
       <section>
          <section className=" container m-auto px-[5%] grid grid-cols-1 md:grid-cols-2 gap-4 ">
             {/* grid left */}
-            <div className="flex flex-col gap-6 justify-center">
+            <div className="flex flex-col gap-6 justify-center ">
                <Image
                   src="/hero/papperSun.svg"
                   alt=""
                   width={185}
                   height={186}
-                  className="w-[20%]"
+                  className="w-[20%] transition hover:animate-ping"
                />
                <div>
                   <div className=" text-black text-5xl md:text-7xl font-normal font-['Space Grotesk']">
@@ -20,14 +21,16 @@ const Hero = () => {
                      <br />
                      notch websites{" "}
                   </div>
-                  <button
+                  <Link href={"https://wa.me/6285161615695"} target="_blank"
                      type="button"
-                     className="mt-9  px-2 py-4 w-[50%] md:px-[55px] md:py-[30px] origin-top-left  bg-[#b9e6fe] rounded-[92px] border-4 border-black justify-center items-center gap-2.5 inline-flex"
+                     className="mt-9  px-2 py-4 w-[50%] md:px-[55px] md:py-[30px] origin-top-left  bg-[#b9e6fe] rounded-[92px] border-4 border-black justify-center items-center gap-2.5 inline-flex 
+                     hover:bg-[#fbdb4b] hover:-translate-y-[1px] hover:border-b-[6px]
+                    active:border-b-[2px] active:brightness-90 active:translate-y-[2px] "
                   >
-                     <div className="text-center text-black text-xl  md:text-3xl font-bold font-['Space Grotesk']">
+                     <p  className="text-center text-black text-xl  md:text-3xl font-bold font-['Space Grotesk'] ">
                         Hire Me
-                     </div>
-                  </button>
+                     </p>
+                  </Link>
                </div>
             </div>
 
@@ -52,24 +55,14 @@ export default Hero;
 
 const HeroSeparator = () => {
    return (
-      <section className="items-center justify-center">
-         <div className=" h-[96px] px-[168px] bg-black shadow-[0px_14px_0px_0px_rgba(0,0,0,0.25)]   flex-col justify-center items-center gap-2.5 flex overflow-hidden">
-            <div className="justify-between items-start md:text-5xl text-xl gap-4 md:gap-[113px] inline-flex">
-               <p className="text-white  font-medium font-['Space Grotesk']">
-                  Figma
-               </p>
-               <p className="text-white  font-medium font-['Space Grotesk']">
-                  HTML
-               </p>
-               <p className="text-white  font-medium font-['Space Grotesk']">
-                  TypeScript
-               </p>
-               <p className="text-white  font-medium font-['Space Grotesk']">
-                  CSS
-               </p>
-               <p className="text-white  font-medium font-['Space Grotesk']">
-                  C++
-               </p>
+      <section className="h-[96px] px-[168px] bg-black shadow-[0px_14px_0px_0px_rgba(0,0,0,0.25)]  overflow-hidden">
+         <div className=" container relative h-full">
+            <div className="flex justify-center items-center gap-8 md:gap-16 md:text-5xl text-xl  h-full text-white font-medium font-['Space Grotesk']">
+               <p>Figma</p>
+               <p>HTML</p>
+               <p>TypeScript</p>
+               <p>CSS</p>
+               <p>C++</p>
             </div>
          </div>
       </section>

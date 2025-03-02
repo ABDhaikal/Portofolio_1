@@ -3,7 +3,7 @@ import React from "react";
 
 const Experience = () => {
    return (
-      <section className="container m-auto    items-center justify-center flex flex-col my-10 px-[20px] relative overflow-hidden ">
+      <section id="experience" className="container m-auto    items-center justify-center flex flex-col my-10 px-[20px] relative overflow-hidden gap-8 ">
          <Image
             src={"/exp/exp1.svg"}
             alt="exp1"
@@ -22,7 +22,7 @@ const Experience = () => {
          <div className="h-[20%] justify-center items-center gap-[47px] inline-flex relative">
             <div
                data-svg-wrapper
-               className="absolute top-[75%] w-full overflow-hidden"
+               className="absolute top-[90%] w-full overflow-hidden"
             >
                <svg
                   width="384"
@@ -39,14 +39,14 @@ const Experience = () => {
                   />
                </svg>
             </div>
-            <div>
-               <span className="text-black text-[64px] font-bold font-['Space_Grotesk']">
+            <h2 className="text-4xl md:text-6xl font-['Space_Grotesk'] text-black ">
+               <span className="font-bold ">
                   Exp
                </span>
-               <span className="text-black text-[64px] font-medium font-['Space_Grotesk']">
+               <span className=" font-medium">
                   erience
                </span>
-            </div>
+            </h2>
          </div>
 
          <div className="w-[80%] md:w-[60%] gap-5   p-5  bg-white shadow-[12px_12px_4px_0px_rgba(191,191,180,1.00)] border-4 border-black flex flex-col justify-center items-center relative ">

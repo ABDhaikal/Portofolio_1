@@ -6,7 +6,7 @@ import PortofolioCard from "./PortoCard";
 
 const Portofolio = () => {
    return (
-      <section className="container m-auto items-center justify-center flex flex-col relative my-10">
+      <section id="porto" className="container m-auto items-center justify-center flex flex-col relative my-10">
         <div className="justify-center items-center relative">
             <Image src={"/porto/PortoAcent.svg"} alt="Acent" width={112} height={117} className="absolute w-[40%] max-w-[112px] top-[0%] right-[-50%]"/>
             <div data-svg-wrapper className="absolute top-[90%] overflow-hidden w-full">

@@ -3,16 +3,16 @@ import React from "react";
 
 const Testimonial = () => {
    return (
-      <section className="container m-auto items-center flex flex-col relative my-10 px-9">
+      <section id="testimony" className="container m-auto items-center flex flex-col relative my-10 px-9 gap-8">
          <div className="h-[20%] justify-center items-center gap-[47px] inline-flex relative">
             <div>
-               <h2 className="text-black text-[64px] font-medium font-['Space_Grotesk']">
+               <h2 className="text-4xl md:text-6xl font-['Space_Grotesk'] text-black ">
                   Testimony
                </h2>
             </div>
             <div
                data-svg-wrapper
-               className="absolute top-[70%] overflow-hidden w-full"
+               className="absolute top-[90%] overflow-hidden w-full"
             >
                <svg
                   width="384"
@@ -31,7 +31,7 @@ const Testimonial = () => {
             </div>
          </div>
 
-         <div className="grid md:grid-cols-2 flex-grow gap-[4%] p-[4%] w-[80%]">
+         <div className="grid md:grid-cols-2 flex-grow gap-[4%] p-[4%] w-[95%]">
             <TestimonialCard title="Siti Premium" img="woman1" position="Senior Designer" says="Design is a bridge that connects everyone and everything" />
             <TestimonialCard title="Alex Turbo" img="man1" position="Frontend Developer" says="An incredible team, creating stunning, user-friendly interfaces with precision and creativity." />
             <TestimonialCard title="Subekti SuperLite" img="man2" position="Senior Backend Developer" says="Ensuring seamless operations and robust systems every day with remarkable expertise." />
