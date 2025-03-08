@@ -25,7 +25,7 @@ export const metadata: Metadata = {
    description:
       "Discover Haikal's world of web development and design. Explore innovative projects, eye-catching visuals, and meticulously crafted code. Specializing in Next.js, Tailwind CSS, TypeScript, and coffee-themed designs with a pop art flair.",
    openGraph: {
-      images: "/Navbaricon/SmileLogo.png",
+      images: "/hero/frame.svg",
    },
 };
 

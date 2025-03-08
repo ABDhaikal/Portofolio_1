@@ -31,7 +31,7 @@ const Testimonial = () => {
             </div>
          </div>
 
-         <div className="grid md:grid-cols-2 flex-grow gap-[4%] p-[4%] w-[95%]">
+         <div className="grid md:grid-cols-2  gap-4 p-4  md:w-[80%]">
             <TestimonialCard title="Siti Premium" img="woman1" position="Senior Designer" says="Design is a bridge that connects everyone and everything" />
             <TestimonialCard title="Alex Turbo" img="man1" position="Frontend Developer" says="An incredible team, creating stunning, user-friendly interfaces with precision and creativity." />
             <TestimonialCard title="Subekti SuperLite" img="man2" position="Senior Backend Developer" says="Ensuring seamless operations and robust systems every day with remarkable expertise." />
