@@ -21,7 +21,7 @@ const Modal: React.FC<ModalProps> = ({
    if (!isOpen) return null;
 
    return (
-      <div id="porto" className="fixed inset-0 flex bg-gray-600 bg-opacity-50 justify-center items-center z-10">
+      <div  className="fixed inset-0 flex bg-gray-600 bg-opacity-50 justify-center items-center z-10">
          <div className="bg-white p-4 rounded gap-1 shadow-lg relative  w-[80%] ">
             <svg
                viewBox="0 0 581 573"
@@ -73,7 +73,7 @@ const Modal: React.FC<ModalProps> = ({
                      className="w-full h-full object-cover"
                   />
                </div>
-               <div className="mx-6 flex flex-col w-2/3 justify-start items-center ">
+               <div className="mx-6 flex flex-col w-full justify-start items-center ">
                   <h3 className=" text-3xl md:text-5xl text-center font-bold  text-black">
                      {title}
                   </h3>

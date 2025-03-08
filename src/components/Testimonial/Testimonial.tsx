@@ -4,7 +4,7 @@ import React from "react";
 const Testimonial = () => {
    return (
       <section id="testimony" className="container m-auto items-center flex flex-col relative my-10 px-9 gap-8">
-         <div className="h-[20%] justify-center items-center gap-[47px] inline-flex relative">
+         <div className=" justify-center items-center gap-[47px] inline-flex relative">
             <div>
                <h2 className="text-4xl md:text-6xl font-['Space_Grotesk'] text-black ">
                   Testimony
@@ -12,7 +12,7 @@ const Testimonial = () => {
             </div>
             <div
                data-svg-wrapper
-               className="absolute top-[90%] overflow-hidden w-full"
+               className="absolute top-[110%] overflow-hidden w-full"
             >
                <svg
                   width="384"
@@ -57,7 +57,7 @@ export const TestimonialCard: React.FC<testiCardProps> = ({
    img,
 }) => {
    return (
-      <div key={"testi"} className="p-[5%] text-black bg-white rounded-sm shadow-[12px_12px_0px_0px_rgba(191,191,180,1.00)] border-4 border-black flex-col justify-start items-start space-y-4 ">
+      <div key={"testi"} className="p-[5%]  relative text-black bg-white rounded-sm shadow-[12px_12px_0px_0px_rgba(191,191,180,1.00)] border-4 border-black flex-col justify-start items-start space-y-4 ">
          <div className=" w-full flex flex-row relative gap-3">
             <div className="w-1/3 flex items-center justify-center">
             <Image src={`/testi/${img}.png`} alt={img} width={70} height={70} className=" rounded-full object-cover justify-self-center aspect-square "/>

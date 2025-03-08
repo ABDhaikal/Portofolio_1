@@ -4,7 +4,7 @@ const AboutMe = () => {
    return (
       <section id="about" className="flex flex-col items-center  container m-auto  my-10 relative">
          <div className="h-[20%] justify-center items-center gap-[47px] inline-flex relative">
-            <div data-svg-wrapper className="absolute top-[90%] overflow-hidden w-full">
+            <div data-svg-wrapper className="absolute top-[90%] overflow-hidden w-full ">
                <svg
                   width="384"
                   height="15"
@@ -91,7 +91,7 @@ export const LineVector = () => {
          height="956"
          viewBox="0 0 138 956"
          fill="none"
-         className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-full "
+         className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-full hidden sm:block "
       >
          <path
             d="M66.9995 1C30.6662 74.8961 -17.4855 239.327 66.9995 324.129C221.999 479.71 39.9996 561.204 41.9996 679.172C43.5996 773.546 86.6662 902.38 108 955"

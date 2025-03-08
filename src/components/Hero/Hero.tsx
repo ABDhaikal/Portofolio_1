@@ -23,12 +23,12 @@ const Hero = () => {
                   </div>
                   <Link href={"https://wa.me/6285161615695"} target="_blank"
                      type="button"
-                     className="mt-9  px-2 py-4 w-[50%] md:px-[55px] md:py-[30px] origin-top-left  bg-[#b9e6fe] rounded-[92px] border-4 border-black justify-center items-center gap-2.5 inline-flex 
+                     className="mt-9  px-2 py-4 w-fit md:px-[55px] md:py-[30px] origin-top-left  bg-[#b9e6fe] rounded-3xl md:rounded-[92px] border-4 border-black justify-center items-center gap-2.5 inline-flex 
                      hover:bg-[#fbdb4b] hover:-translate-y-[1px] hover:border-b-[6px]
-                    active:border-b-[2px] active:brightness-90 active:translate-y-[2px] "
+                    active:border-b-[2px] active:brightness-90 active:translate-y-[2px]  "
                   >
-                     <p  className="text-center text-black text-xl  md:text-3xl font-bold font-['Space Grotesk'] ">
-                        Hire Me
+                     <p  className="text-center  text-black text-xl  md:text-3xl font-bold font-['Space Grotesk'] ">
+                        Hire Me 
                      </p>
                   </Link>
                </div>
@@ -55,9 +55,9 @@ export default Hero;
 
 const HeroSeparator = () => {
    return (
-      <section className="h-[96px] px-[168px] bg-black shadow-[0px_14px_0px_0px_rgba(0,0,0,0.25)]  overflow-hidden">
-         <div className=" container relative h-full">
-            <div className="flex justify-center items-center gap-8 md:gap-16 md:text-5xl text-xl  h-full text-white font-medium font-['Space Grotesk']">
+      <section className="container m-auto h-[96px]  bg-black shadow-[0px_14px_0px_0px_rgba(0,0,0,0.25)]  overflow-hidden">
+         <div className="  relative h-full w-full ">
+            <div className="flex justify-evenly items-center md:text-5xl text-xl w-full  h-full text-white font-medium font-['Space Grotesk']">
                <p>Figma</p>
                <p>HTML</p>
                <p>TypeScript</p>

@@ -63,7 +63,7 @@ const Experience = () => {
                      <span className="font-bold ">Gogle</span>
                   </div>
 
-                  <div className="text-black text-xl md:text-2xl font-normal font-['Space_Grotesk']">
+                  <div className="text-black text-sm md:text-2xl font-normal font-['Space_Grotesk']">
                      Worked on design system at Material designs
                   </div>
                   <div className="text-[#706e6e] text-xs md:text-xs font-medium font-['Space_Grotesk'] leading-none">
@@ -85,7 +85,7 @@ const Experience = () => {
                      <span className="font-bold ">Mikroskop</span>
                   </div>
 
-                  <div className="text-black text-xl md:text-2xl font-normal font-['Space_Grotesk']">
+                  <div className="text-black text-sm md:text-2xl font-normal font-['Space_Grotesk']">
                      Worked on design system at Material designs
                   </div>
                   <div className="text-[#706e6e] text-xs md:text-xs font-medium font-['Space_Grotesk'] leading-none">
@@ -107,7 +107,7 @@ const Experience = () => {
                      <span className="font-bold ">Gooogle</span>
                   </div>
 
-                  <div className="text-black text-xl md:text-2xl font-normal font-['Space_Grotesk']">
+                  <div className="text-black text-sm md:text-2xl font-normal font-['Space_Grotesk']">
                      Worked on design system at Material designs
                   </div>
                   <div className="text-[#706e6e] text-xs md:text-xs font-medium font-['Space_Grotesk'] leading-none">

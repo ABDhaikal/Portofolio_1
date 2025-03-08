@@ -14,7 +14,7 @@ const PortofolioCard: React.FC<CardProps> = ({ title, subtitle,description, imgS
    const ModalCloseHandle = () => setIsOpenModal(false);
    return (
     
-      <div className=" w-[300px] md:w-[450px] bg-white relative p-4 flex-col gap-3  shadow-[-10px_10px_0px_0px_rgba(0,0,0,0.44)]  aspect-square ">
+      <div className=" w-[300px] md:w-[100%] bg-white relative p-4 flex-col gap-3  shadow-[-10px_10px_0px_0px_rgba(0,0,0,0.44)]   ">
          <svg 
             viewBox="0 0 581 573"
             preserveAspectRatio="none"
@@ -56,13 +56,12 @@ const PortofolioCard: React.FC<CardProps> = ({ title, subtitle,description, imgS
             />
          </svg>
 
-         <div className="border-4 border-black relative h-2/3 ">
+         <div className="border-4 border-black relative w-full aspect-[4/3]">
             <Image
                src={imgSrc}
                alt=""
-               width={300}
-               height={300}
-               className=" object-fill w-full h-full"
+              fill
+               className=" object-cover"
             />
          </div>
          
@@ -76,7 +75,7 @@ const PortofolioCard: React.FC<CardProps> = ({ title, subtitle,description, imgS
                </div>
             </div>
             <div className=" text-black text-xl font-medium font-['Space Grotesk']">
-               <button onClick={ModalOpenHandle} className="p-2">
+               <button onClick={ModalOpenHandle} className="p-2  hover:scale-105">
                   <Image src={"/porto/moreButton.svg"} alt="" width={50} height={50} className="w-[30px] md:w-[50px]" />
                </button>
             </div>
@@ -86,55 +85,3 @@ const PortofolioCard: React.FC<CardProps> = ({ title, subtitle,description, imgS
    );
 };
 export default PortofolioCard;
-
-// interface ModalProps {
-//    isOpen: boolean;
-//    onClose: () => void;
-//    img:string;
-//    title:string
-//    subtitle:string
-//    description:string
-// }
-
-// const Modal: React.FC<ModalProps> = ({ isOpen, onClose ,img,title,subtitle,description}) => {
-//    if (!isOpen) return null;
-
-//    return (
-//       <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center">
-//          <div className="bg-white p-4 rounded shadow-lg">
-//             <h2 className="text-lg font-bold mb-4">Modal Title</h2>
-//             <p className="mb-4">This is the modal content.</p>
-//             <button
-//                className="bg-blue-500 text-white px-4 py-2 rounded"
-//                onClick={onClose}
-//             >
-//                Close
-//             </button>
-//          </div>
-//       </div>
-//    );
-// };
-
-// const Tombol: React.FC<ModalProps> = () => {
-//    const [isModalOpen, setIsModalOpen] = useState(false);
-
-//    const handleOpenModal = () => {
-//       setIsModalOpen(true);
-//    };
-
-//    const handleCloseModal = () => {
-//       setIsModalOpen(false);
-//    };
-
-//    return (
-//       <div>
-//          <button
-//             className="bg-blue-500 text-white px-4 py-2 rounded"
-//             onClick={handleOpenModal}
-//          >
-//             Open Modal
-//          </button>
-//          <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
-//       </div>
-//    );
-// };

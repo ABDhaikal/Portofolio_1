@@ -74,7 +74,7 @@ export const SkillBody = () => {
             <div className="border-4 border-t-0 md:border-l-0 border-black grow relative p-[8%] item-center flex flex-col">
                <p className="text-4xl">My Skill</p>
                <p className="text-2xl">
-                  can provide your dream into the future
+                  Craft intuitive user interfaces and enhance user experiences.
                </p>
             </div>
          </div>
@@ -94,7 +94,7 @@ export const SkillBody = () => {
                      UI/UX
                   </h3>
                   <p className="text-xl md:text-2xl">
-                     Services we’re providing that derive 99% result
+                     Craft intuitive user interfaces and enhance user experiences.
                   </p>
                </div>
 
@@ -131,7 +131,7 @@ export const SkillBody = () => {
                      Frontend
                   </h3>
                   <p className="text-xl md:text-2xl">
-                     Services we’re providing that derive 99% result
+                  Implement web designs using HTML, CSS, JavaScript.
                   </p>
                </div>
 
@@ -183,7 +183,7 @@ export const SkillBody = () => {
                   Backend
                   </h3>
                   <p className="text-xl md:text-2xl">
-                     Services we’re providing that derive 99% result
+                  Build server-side logic, databases, and APIs for web applications.
                   </p>
                </div>
 
@@ -220,7 +220,7 @@ export const SkillBody = () => {
                   DevOps & Tools
                   </h3>
                   <p className="text-xl md:text-2xl">
-                     Services we’re providing that derive 99% result
+                  Automate deployment, monitor performance, ensure system reliability.
                   </p>
                </div>
 
