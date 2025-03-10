@@ -17,9 +17,14 @@ const Hero = () => {
                />
                <div>
                   <div className=" text-black text-5xl md:text-7xl font-normal font-['Space Grotesk']">
-                     I create ✍️ top
-                     <br />
-                     notch websites{" "}
+                     Haikal Abdurrahman
+                  </div>
+                  <div className=" text-gray-800   text-xl md:text-3xl font-normal font-['Space Grotesk']">
+                     WEB DEVELOPER
+                  </div>
+
+                  <div className=" text-black text-2xl md:text-4xl font-normal font-['Space Grotesk']">
+                     I create ✍️ top notch websites{" "}
                   </div>
                   <Link
                      href={"https://wa.me/6285161615695"}
