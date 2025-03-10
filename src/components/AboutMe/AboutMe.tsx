@@ -3,7 +3,7 @@ import React from "react";
 const AboutMe = () => {
    return (
       <section id="about" className="flex flex-col items-center  container m-auto  my-10 relative">
-         <div className="h-[20%] justify-center items-center gap-[47px] inline-flex relative">
+         <div className="h-[20%] my-4 justify-center items-center gap-[47px] inline-flex relative">
             <div data-svg-wrapper className="absolute top-[90%] overflow-hidden w-full ">
                <svg
                   width="384"

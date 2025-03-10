@@ -5,7 +5,7 @@ import React from "react";
 const Skill = () => {
    return (
       // header
-      <section id="skill" className="container m-auto my-[24px]   md:max-h-[816px] relative flex flex-col px-8">
+      <section id="skill" className="container m-auto my-[24px]   relative flex flex-col px-8">
          <SkillHead />
          <SkillBody />
       </section>
@@ -73,7 +73,7 @@ export const SkillBody = () => {
             </div>
             <div className="border-4 border-t-0 md:border-l-0 border-black grow relative p-[8%] item-center flex flex-col">
                <p className="text-4xl">My Skill</p>
-               <p className="text-2xl">
+               <p className="text-xl">
                   Craft intuitive user interfaces and enhance user experiences.
                </p>
             </div>
