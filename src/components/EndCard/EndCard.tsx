@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center text-4xl md:text-5xl  gap-3">
-               <p>Porotofolio </p> <p>2025</p>
+               <p>Portofolio </p> <p>2025</p>
             </div>
             
             <div className="flex gap-3">

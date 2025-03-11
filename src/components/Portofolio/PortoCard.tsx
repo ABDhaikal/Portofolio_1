@@ -56,10 +56,10 @@ const PortofolioCard: React.FC<CardProps> = ({ title, subtitle,description, imgS
             />
          </svg>
 
-         <div className="border-4 border-black relative w-full aspect-[4/3]">
+         <div className="border-4 border-black relative w-auto aspect-[4/3]">
             <Image
                src={imgSrc}
-               alt=""
+               alt="image"
               fill
                className=" object-cover"
             />
